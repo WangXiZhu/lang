@@ -1,190 +1,218 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>福建5日游攻略 - 泉州·福州·平潭</title>
     <style>
-        body {
-            font-family: 'Microsoft YaHei', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            color: #e74c3c;
-            text-align: center;
-            border-bottom: 2px solid #e74c3c;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #3498db;
-            margin-top: 30px;
-            border-left: 4px solid #3498db;
-            padding-left: 10px;
-        }
-        .day {
-            background-color: white;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .highlight {
-            background-color: #fffde7;
-            padding: 10px;
-            border-left: 3px solid #ffd600;
-            margin: 10px 0;
-        }
-        .tips {
-            background-color: #e3f2fd;
-            padding: 10px;
-            border-radius: 5px;
-            margin: 10px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .emoji {
-            font-size: 1.2em;
-        }
+      body {
+        font-family: "Microsoft YaHei", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      h1 {
+        color: #e74c3c;
+        text-align: center;
+        border-bottom: 2px solid #e74c3c;
+        padding-bottom: 10px;
+      }
+      h2 {
+        color: #3498db;
+        margin-top: 30px;
+        border-left: 4px solid #3498db;
+        padding-left: 10px;
+      }
+      .day {
+        background-color: white;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .highlight {
+        background-color: #fffde7;
+        padding: 10px;
+        border-left: 3px solid #ffd600;
+        margin: 10px 0;
+      }
+      .tips {
+        background-color: #e3f2fd;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .emoji {
+        font-size: 1.2em;
+      }
     </style>
-</head>
-<body>
+  </head>
+
+  <body>
+    <img style="width: 200px; height: 200px" src="../assets/img.jpg" alt="" />
+    <audio id="myAudio" src="../assets/audio.mp3"></audio>
+    <button id="playBtn">播放</button>
+    <button id="pauseBtn">暂停</button>
+
     <h1>福建5日游攻略 <span class="emoji">🌊🏯🌴</span></h1>
     <p>行程时间：5月1日-5月5日 | 目的地：泉州→福州→平潭</p>
-    
+
     <div class="tips">
-        <p><strong>📌 行程亮点：</strong>海丝文化、闽都风情、海岛风光一站式体验！</p>
-        <p><strong>🚗 交通建议：</strong>城市间建议高铁+租车组合，平潭岛推荐自驾游</p>
+      <p>
+        <strong>📌 行程亮点：</strong>海丝文化、闽都风情、海岛风光一站式体验！
+      </p>
+      <p>
+        <strong>🚗 交通建议：</strong>城市间建议高铁+租车组合，平潭岛推荐自驾游
+      </p>
     </div>
 
     <!-- 第一天 -->
     <div class="day">
-        <h2>第一天 <span class="emoji">🏮</span> 泉州 · 海丝文化之旅</h2>
-        <div class="highlight">
-            <p><strong>上午：</strong>抵达泉州 → 入住酒店（推荐西街附近）</p>
-            <p><strong>下午：</strong>开元寺 → 西街美食探索 → 钟楼</p>
-            <p><strong>晚上：</strong>泉州木偶剧院（提前预约） → 夜游中山路</p>
-        </div>
-        <h3>🍜 必吃美食：</h3>
-        <ul>
-            <li>侯阿婆肉粽（招牌干贝粽）</li>
-            <li>斯丹姜母鸭</li>
-            <li>秉正堂四果汤</li>
-        </ul>
-        <div class="tips">
-            <p>💡 小贴士：泉州老城区景点集中，建议步行+共享单车结合</p>
-        </div>
+      <h2>第一天 <span class="emoji">🏮</span> 泉州 · 海丝文化之旅</h2>
+      <div class="highlight">
+        <p><strong>上午：</strong>抵达泉州 → 入住酒店（推荐西街附近）</p>
+        <p><strong>下午：</strong>开元寺 → 西街美食探索 → 钟楼</p>
+        <p><strong>晚上：</strong>泉州木偶剧院（提前预约） → 夜游中山路</p>
+      </div>
+      <h3>🍜 必吃美食：</h3>
+      <ul>
+        <li>侯阿婆肉粽（招牌干贝粽）</li>
+        <li>斯丹姜母鸭</li>
+        <li>秉正堂四果汤</li>
+      </ul>
+      <div class="tips">
+        <p>💡 小贴士：泉州老城区景点集中，建议步行+共享单车结合</p>
+      </div>
     </div>
 
     <!-- 第二天 -->
     <div class="day">
-        <h2>第二天 <span class="emoji">🕌</span> 泉州 · 宗教博物馆</h2>
-        <div class="highlight">
-            <p><strong>上午：</strong>清净寺 → 关岳庙 → 天后宫</p>
-            <p><strong>下午：</strong>海外交通史博物馆 → 蟳埔村（体验簪花围）</p>
-            <p><strong>晚上：</strong>前往福州（高铁约1小时） → 入住三坊七巷附近</p>
-        </div>
-        <h3>📸 拍照打卡点：</h3>
-        <ul>
-            <li>蟳埔村蚵壳厝</li>
-            <li>簪花围民俗体验</li>
-            <li>西街天台咖啡厅</li>
-        </ul>
+      <h2>第二天 <span class="emoji">🕌</span> 泉州 · 宗教博物馆</h2>
+      <div class="highlight">
+        <p><strong>上午：</strong>清净寺 → 关岳庙 → 天后宫</p>
+        <p><strong>下午：</strong>海外交通史博物馆 → 蟳埔村（体验簪花围）</p>
+        <p><strong>晚上：</strong>前往福州（高铁约1小时） → 入住三坊七巷附近</p>
+      </div>
+      <h3>📸 拍照打卡点：</h3>
+      <ul>
+        <li>蟳埔村蚵壳厝</li>
+        <li>簪花围民俗体验</li>
+        <li>西街天台咖啡厅</li>
+      </ul>
     </div>
 
     <!-- 第三天 -->
     <div class="day">
-        <h2>第三天 <span class="emoji">🏯</span> 福州 · 闽都文化</h2>
-        <div class="highlight">
-            <p><strong>上午：</strong>三坊七巷（林则徐纪念馆、冰心故居）</p>
-            <p><strong>下午：</strong>西湖公园 → 福建省博物馆</p>
-            <p><strong>晚上：</strong>上下杭历史街区夜景 → 闽江夜游</p>
-        </div>
-        <h3>🍲 福州必尝：</h3>
-        <ul>
-            <li>同利肉燕</li>
-            <li>永和鱼丸</li>
-            <li>老福州佛跳墙</li>
-        </ul>
-        <div class="tips">
-            <p>💡 建议购买三坊七巷联票，包含多个名人故居</p>
-        </div>
+      <h2>第三天 <span class="emoji">🏯</span> 福州 · 闽都文化</h2>
+      <div class="highlight">
+        <p><strong>上午：</strong>三坊七巷（林则徐纪念馆、冰心故居）</p>
+        <p><strong>下午：</strong>西湖公园 → 福建省博物馆</p>
+        <p><strong>晚上：</strong>上下杭历史街区夜景 → 闽江夜游</p>
+      </div>
+      <h3>🍲 福州必尝：</h3>
+      <ul>
+        <li>同利肉燕</li>
+        <li>永和鱼丸</li>
+        <li>老福州佛跳墙</li>
+      </ul>
+      <div class="tips">
+        <p>💡 建议购买三坊七巷联票，包含多个名人故居</p>
+      </div>
     </div>
 
     <!-- 第四天 -->
     <div class="day">
-        <h2>第四天 <span class="emoji">🌅</span> 平潭 · 海岛风光</h2>
-        <div class="highlight">
-            <p><strong>上午：</strong>福州租车自驾前往平潭（约1.5小时） → 北港文创村</p>
-            <p><strong>下午：</strong>长江澳风车田 → 北部生态廊道</p>
-            <p><strong>晚上：</strong>龙王头沙滩观星（若天气好）</p>
-        </div>
-        <h3>🚗 自驾路线建议：</h3>
-        <table>
-            <tr>
-                <th>路段</th>
-                <th>亮点</th>
-                <th>时间</th>
-            </tr>
-            <tr>
-                <td>北港→长江澳</td>
-                <td>最美环岛路</td>
-                <td>30分钟</td>
-            </tr>
-            <tr>
-                <td>北部生态廊道</td>
-                <td>玻璃栈道观海</td>
-                <td>1-2小时</td>
-            </tr>
-        </table>
-        <div class="tips">
-            <p>💡 平潭风大，记得带防风外套和防晒用品</p>
-        </div>
+      <h2>第四天 <span class="emoji">🌅</span> 平潭 · 海岛风光</h2>
+      <div class="highlight">
+        <p>
+          <strong>上午：</strong>福州租车自驾前往平潭（约1.5小时） → 北港文创村
+        </p>
+        <p><strong>下午：</strong>长江澳风车田 → 北部生态廊道</p>
+        <p><strong>晚上：</strong>龙王头沙滩观星（若天气好）</p>
+      </div>
+      <h3>🚗 自驾路线建议：</h3>
+      <table>
+        <tr>
+          <th>路段</th>
+          <th>亮点</th>
+          <th>时间</th>
+        </tr>
+        <tr>
+          <td>北港→长江澳</td>
+          <td>最美环岛路</td>
+          <td>30分钟</td>
+        </tr>
+        <tr>
+          <td>北部生态廊道</td>
+          <td>玻璃栈道观海</td>
+          <td>1-2小时</td>
+        </tr>
+      </table>
+      <div class="tips">
+        <p>💡 平潭风大，记得带防风外套和防晒用品</p>
+      </div>
     </div>
 
     <!-- 第五天 -->
     <div class="day">
-        <h2>第五天 <span class="emoji">🏝️</span> 平潭 · 蓝眼泪奇遇</h2>
-        <div class="highlight">
-            <p><strong>上午：</strong>猴研岛（大陆离台湾最近点）</p>
-            <p><strong>下午：</strong>坛南湾沙滩休闲 → 返程</p>
-        </div>
-        <h3>🌌 特别提示：</h3>
-        <ul>
-            <li>4-6月是蓝眼泪高发期，夜间可关注相关预报</li>
-            <li>推荐入住坛南湾附近民宿，方便追泪</li>
-            <li>返程前记得加满油，平潭加油站较少</li>
-        </ul>
+      <h2>第五天 <span class="emoji">🏝️</span> 平潭 · 蓝眼泪奇遇</h2>
+      <div class="highlight">
+        <p><strong>上午：</strong>猴研岛（大陆离台湾最近点）</p>
+        <p><strong>下午：</strong>坛南湾沙滩休闲 → 返程</p>
+      </div>
+      <h3>🌌 特别提示：</h3>
+      <ul>
+        <li>4-6月是蓝眼泪高发期，夜间可关注相关预报</li>
+        <li>推荐入住坛南湾附近民宿，方便追泪</li>
+        <li>返程前记得加满油，平潭加油站较少</li>
+      </ul>
     </div>
 
     <div class="tips">
-        <h3>📝 行前准备清单</h3>
-        <ul>
-            <li>身份证、驾驶证（如需租车）</li>
-            <li>防晒霜、墨镜、帽子</li>
-            <li>舒适的运动鞋（泉州老城区石板路多）</li>
-            <li>相机+三脚架（拍蓝眼泪必备）</li>
-            <li>提前下载平潭离线地图（部分区域信号弱）</li>
-        </ul>
+      <h3>📝 行前准备清单</h3>
+      <ul>
+        <li>身份证、驾驶证（如需租车）</li>
+        <li>防晒霜、墨镜、帽子</li>
+        <li>舒适的运动鞋（泉州老城区石板路多）</li>
+        <li>相机+三脚架（拍蓝眼泪必备）</li>
+        <li>提前下载平潭离线地图（部分区域信号弱）</li>
+      </ul>
     </div>
 
-    <div style="text-align: center; margin-top: 30px;">
-        <p>祝您旅途愉快！期待您带回美好的回忆 <span class="emoji">✨📸🌊</span></p>
+    <div style="text-align: center; margin-top: 30px">
+      <p>
+        祝您旅途愉快！期待您带回美好的回忆 <span class="emoji">✨📸🌊</span>
+      </p>
     </div>
-</body>
+    <script>
+      const audio = document.getElementById("myAudio");
+      const playBtn = document.getElementById("playBtn");
+      const pauseBtn = document.getElementById("pauseBtn");
+
+      playBtn.addEventListener("click", () => {
+        audio.play();
+      });
+
+      pauseBtn.addEventListener("click", () => {
+        audio.pause();
+      });
+    </script>
+  </body>
 </html>
